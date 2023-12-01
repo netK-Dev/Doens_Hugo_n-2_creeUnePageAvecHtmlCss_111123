@@ -62,7 +62,7 @@ a {
 /****** Header ***********/
 header {
     display: flex;
-    height: 79px;
+    height: 79px; 
 }
 
 .logo-header {
@@ -75,6 +75,7 @@ header {
     margin-left: auto;
     margin-top: 16px;
     width: 244px;
+    height: 100%;
     display: flex;
 }
 
