@@ -64,7 +64,7 @@ a {
 header {
     margin: 0%;
     display: flex;
-    height: 79px; 
+    height: 79px;
 }
 
 .logo-header {
@@ -81,6 +81,13 @@ header {
     display: flex;
 }
 
+#head-cont1, #head-cont2 {
+    display: flex;
+    align-items: center;
+    height: 79px;
+    position: relative; 
+}
+
 #head-cont1 {
     margin-right: 35px;
 }
@@ -89,16 +96,18 @@ header {
     margin-left: 35px;
 }
 
-#head1:hover, #head2:hover {
+
+#head-cont1:hover::before, #head-cont2:hover::before {
+    content: '';
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
     border-top: 3px solid #0065FC;
     cursor: pointer;
 }
-#head1, #head2 {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
+.cont-menu:hover {
+    cursor: pointer;
 }
 
 
