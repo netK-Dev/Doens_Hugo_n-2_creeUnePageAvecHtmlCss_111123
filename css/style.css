@@ -69,6 +69,7 @@ header {
     align-items: flex-start; 
     height: 79px;
     position: relative;
+    margin-bottom: 30px;
 }
 
 .logo-header {
@@ -124,6 +125,7 @@ p {
     padding: 0px;
     margin: 0px;
 }
+
 .headline {
     display: flex;
     gap : 8px;
@@ -191,13 +193,84 @@ p {
     cursor: pointer;
 }
 
-.cont-filtre {
-    width: 758px;
+.filterbar {
+    width: 800px;
     height: 50px;
     display: flex;
+    align-items: center;
     flex-direction: row;
+    gap: 15px;
     margin-bottom: 35px;
-    border: 2px solid black;   /**provisoire*/
+}
+.filter-text {
+    font-weight: 700;
+    font-size: 18px;
+}
+.F-eco {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 19px;
+    padding-right: 19px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    gap: 10px;
+    width: 173px;
+    height: 50px;
+    border: 2px solid var(--grey-tint-2, #D9D9D9);
+    border-radius: 25px;
+}
+.F-fam {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 19px;
+    padding-right: 19px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    gap: 10px;
+    width: 134px;
+    height: 50px;
+    border: 2px solid var(--grey-tint-2, #D9D9D9);
+    border-radius: 25px;
+}
+.F-rom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding-left: 19px;
+    padding-right: 19px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    height: 50px;
+    width: 170px;
+    border: 2px solid var(--grey-tint-2, #D9D9D9);
+    border-radius: 25px;
+}
+.F-np {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding-left: 19px;
+    padding-right: 19px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    height: 50px;
+    width: 167px;
+    border: 2px solid var(--grey-tint-2, #D9D9D9);
+    border-radius: 25px;
+}
+.F-eco:hover, .F-fam:hover, .F-rom:hover, .F-np:hover {
+    background-color: #DEEBFF;
+}
+.F-icone {
+    font-size: 22px;
+}
+.F-txt {
+    font-size: 17px;
+    font-weight: 700;
 }
 .infobar {
     display: flex;
