@@ -194,9 +194,19 @@ p {
 .cont-filtre {
     width: 758px;
     height: 50px;
+    display: flex;
+    flex-direction: row;
     margin-bottom: 35px;
     border: 2px solid black;   /**provisoire*/
 }
+.infobar {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
