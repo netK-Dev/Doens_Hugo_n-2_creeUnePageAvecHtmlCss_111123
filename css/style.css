@@ -60,59 +60,143 @@ a {
     color: var(--main-bg-color)
 }
 
-/****** Header ***********/
+
+/*header***********/
+
 header {
-    margin: 0%;
+    margin: 0;
     display: flex;
+    align-items: flex-start; 
     height: 79px;
+    position: relative;
 }
 
 .logo-header {
     width: 61.5px;
     height: 19px;
-    margin-top: 19px;
+    margin-top: 19px; 
 }
 
 .menu {
     margin-left: auto;
-    align-items: center;
-    width: 244px;
-    height: 100%;
     display: flex;
+    align-items: flex-start; 
+    width: 244px;
+    height: calc(100% - 19px); 
 }
 
 #head-cont1, #head-cont2 {
     display: flex;
-    align-items: center;
-    height: 79px;
+    align-items: center; 
     position: relative; 
+    margin-top: 19px; 
+    height: 19px; 
 }
-
 #head-cont1 {
     margin-right: 35px;
 }
-
 #head-cont2 {
     margin-left: 35px;
 }
 
-
 #head-cont1:hover::before, #head-cont2:hover::before {
     content: '';
-    position: absolute; 
-    top: 0;
+    position: absolute;
+    top: -19px; 
     left: 0;
     right: 0;
-    border-top: 3px solid #0065FC;
+    height: 3px; 
+    background-color: #0065FC;
     cursor: pointer;
 }
+
 .cont-menu:hover {
     cursor: pointer;
 }
 
 
+/*********recherche-hebergements********/
+h1 {
+    padding: 0px;
+    margin: 0px;
+}
+p {
+    padding: 0px;
+    margin: 0px;
+}
+.headline {
+    display: flex;
+    gap : 8px;
+    flex-direction: column;
+}
 
+.recherche {
+    width: 377px;
+    height: 49px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.cont-icone-rech {
+    width: 50px;
+    height: 49px;
+    border-radius: 15px 0px 0px 15px;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ic-rech {
+    color: black;
+}
+.cont-input-rech {
+    width: 195px;
+    height: 49px;
+    border-top: 1px solid #F2F2F2;
+    background-color: white;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.input-rech {
+    outline: none;
+    border: none;
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+}
+.input-rech:focus {
+    outline: none;
+    border: none;
+}
+.cont-button-rech {
+    width: 132px;
+    height: 49px;
+    
+}
+.button-rech {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 15px 15px 0px;
+    background-color: #0065FC;
+    border: none;
+    font-weight: bold;
+    color: white;
+}
+.button-rech:hover {
+    background-color: blue;
+    cursor: pointer;
+}
 
+.cont-filtre {
+    width: 758px;
+    height: 50px;
+    margin-bottom: 35px;
+    border: 2px solid black;   /**provisoire*/
+}
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
