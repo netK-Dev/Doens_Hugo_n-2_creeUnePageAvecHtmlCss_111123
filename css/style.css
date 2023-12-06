@@ -14,8 +14,23 @@
 }
 
 body {
+    margin: 0%;
     display: flex;
     justify-content: center;
+    margin: 0px;
+}
+h1 {
+    padding: 0px;
+    margin: 0px;
+    font-size: 22px;
+}
+h2 {
+    margin: 0px;
+    font-size: 22px;
+}
+
+p {
+    padding: 0px;
     margin: 0px;
 }
 
@@ -60,30 +75,217 @@ a {
     color: var(--main-bg-color)
 }
 
-/****** Header ***********/
+
+/*header***********/
+
 header {
+    margin: 0;
     display: flex;
+    align-items: flex-start; 
     height: 79px;
+    position: relative;
+    margin-bottom: 30px;
 }
 
 .logo-header {
     width: 61.5px;
     height: 19px;
-    margin-top: 19px;
+    margin-top: 19px; 
 }
 
 .menu {
     margin-left: auto;
-    margin-top: 16px;
-    width: 244px;
     display: flex;
+    align-items: flex-start; 
+    width: 244px;
+    height: calc(100% - 19px); 
 }
 
+#head-cont1, #head-cont2 {
+    display: flex;
+    align-items: center; 
+    position: relative; 
+    margin-top: 19px; 
+    height: 19px; 
+}
 #head-cont1 {
     margin-right: 35px;
 }
 #head-cont2 {
     margin-left: 35px;
+}
+
+#head-cont1:hover::before, #head-cont2:hover::before {
+    content: '';
+    position: absolute;
+    top: -19px; 
+    left: 0;
+    right: 0;
+    height: 3px; 
+    background-color: #0065FC;
+    cursor: pointer;
+}
+
+.cont-menu:hover {
+    cursor: pointer;
+}
+
+
+/*********recherche-hebergements********/
+
+
+.headline {
+    display: flex;
+    gap : 8px;
+    flex-direction: column;
+}
+
+.recherche {
+    width: 377px;
+    height: 49px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.cont-icone-rech {
+    width: 50px;
+    height: 49px;
+    border-radius: 15px 0px 0px 15px;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ic-rech {
+    color: black;
+}
+.cont-input-rech {
+    width: 195px;
+    height: 49px;
+    border-top: 1px solid #F2F2F2;
+    background-color: white;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.input-rech {
+    outline: none;
+    border: none;
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+}
+.input-rech:focus {
+    outline: none;
+    border: none;
+}
+.cont-button-rech {
+    width: 132px;
+    height: 49px;
+    
+}
+.button-rech {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 15px 15px 0px;
+    background-color: #0065FC;
+    border: none;
+    font-weight: bold;
+    color: white;
+}
+.button-rech:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+.filterbar {
+    width: 800px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+.filter-text {
+    font-weight: 700;
+    font-size: 18px;
+}
+.F-eco {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 19px;
+    padding-right: 19px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    gap: 10px;
+    width: 173px;
+    height: 50px;
+    border: 2px solid var(--grey-tint-2, #D9D9D9);
+    border-radius: 25px;
+}
+.F-fam {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 19px;
+    padding-right: 19px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    gap: 10px;
+    width: 134px;
+    height: 50px;
+    border: 2px solid var(--grey-tint-2, #D9D9D9);
+    border-radius: 25px;
+}
+.F-rom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding-left: 19px;
+    padding-right: 19px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    height: 50px;
+    width: 170px;
+    border: 2px solid var(--grey-tint-2, #D9D9D9);
+    border-radius: 25px;
+}
+.F-np {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding-left: 19px;
+    padding-right: 19px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    height: 50px;
+    width: 167px;
+    border: 2px solid var(--grey-tint-2, #D9D9D9);
+    border-radius: 25px;
+}
+.F-eco:hover, .F-fam:hover, .F-rom:hover, .F-np:hover {
+    background-color: #DEEBFF;
+}
+.F-icone {
+    font-size: 22px;
+}
+.F-txt {
+    font-size: 17px;
+    font-weight: 700;
+}
+.infobar {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 35px;
 }
 
 /****** Hebergements And Populaires ***********/
