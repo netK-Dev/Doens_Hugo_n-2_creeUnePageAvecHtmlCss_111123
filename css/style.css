@@ -300,6 +300,10 @@ header {
     box-sizing: border-box;
 }
 
+.hebergements-cards img {
+    object-fit: cover;
+}
+
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
