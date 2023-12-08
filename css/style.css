@@ -341,8 +341,29 @@ header {
 }
 
 .HC-content {
+    align-self: flex-start;
     padding-left: 15px;
     padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.HC-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.HC-txt h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+.HC-txt p {
+    font-size: 14px;
+}
+
+.HC-card-rating {
+    font-size: 16.93px;
 }
 
 .affich-plus {
