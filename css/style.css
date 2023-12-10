@@ -416,6 +416,18 @@ header {
     margin-bottom: 5px;
 }
 
+/****** activités ********/
+
+.zone-activites {
+    padding: 30px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.act-title {
+    font-size: 22px;
+}
 
 
 
