@@ -184,6 +184,8 @@ header {
     font-weight: bold;
     padding-left: 24px;
     padding-right: 24px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 .input-rech:focus {
     outline: none;
