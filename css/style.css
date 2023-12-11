@@ -459,6 +459,12 @@ header {
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
     border-radius: 20px;
 }
+.lien-cards {
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+}
+
 .cards-activites h3 {
     align-self: flex-start;
     margin-left: 19px;
