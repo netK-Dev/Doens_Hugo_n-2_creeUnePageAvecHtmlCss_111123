@@ -100,6 +100,13 @@ header {
     width: 244px;
     height: calc(100% - 19px); 
 }
+.menu nav {
+    margin-left: auto;
+    display: flex;
+    align-items: flex-start; 
+    width: 244px;
+    height: calc(100% - 19px);
+}
 
 #head-cont1, #head-cont2 {
     display: flex;
@@ -489,6 +496,34 @@ header {
     align-self: stretch;
 }
 
+/******* Footer *********/
+
+footer {
+    height: 163px;
+    background-color: #F2F2F2;
+    margin-top: 35px;
+    display: flex;
+    bottom: auto;
+}
+
+.foot-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+    gap: 15px;
+    background-color: #F2F2F2;
+}
+.foot-box h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+.foot-box p {
+    font-size: 16px;
+    font-weight: 400;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
