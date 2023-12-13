@@ -101,7 +101,7 @@ header {
     height: calc(100% - 19px); 
 }
 .menu nav {
-    margin-left: auto;
+
     display: flex;
     align-items: flex-start; 
     width: 244px;
@@ -150,7 +150,6 @@ header {
 .recherche {
     width: 377px;
     height: 49px;
-    background-color: aqua;
     display: flex;
     flex-direction: row;
     border-radius: 15px;
@@ -212,6 +211,9 @@ header {
     font-weight: bold;
     color: white;
 }
+.button-icon {
+    display: none;
+}
 .button-rech:hover {
     background-color: blue;
     cursor: pointer;
@@ -225,6 +227,12 @@ header {
     flex-direction: row;
     gap: 15px;
     margin-bottom: 35px;
+}
+.filter-zone {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
 }
 .filter-text {
     font-weight: 700;
@@ -308,6 +316,7 @@ header {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    flex-direction: row-reverse;
 }
 
 .hebergements-and-populaires section {
@@ -511,7 +520,12 @@ footer {
     display: flex;
     bottom: auto;
 }
-
+.foot-cont {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
 .foot-box {
     flex: 1;
     display: flex;
@@ -571,5 +585,264 @@ footer {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .main-container {
+        padding: 0;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /********* Header ******/
+
+    #head-cont1:hover::before, #head-cont2:hover::before {
+        display: none;
+    }
+    .logo-header {
+        padding: 30px;
+        margin: 0;
+    }
+    header {
+        height: 115px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu {
+        align-self: center;
+        width: 100%;
+        margin: 0;
+    }
+    #head-cont1 {
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding-bottom: 15px;
+        border-bottom: 2px solid #F2F2F2;
+    }
+    #head-cont2 {
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding-bottom: 15px;
+        border-bottom: 2px solid #F2F2F2;
+    }
+
+    #head-cont1:hover {
+        border-bottom: 2px solid #0065FC;
+    }
+
+    #head-cont2:hover {
+        border-bottom: 2px solid #0065FC;
+    }
+
+    .menu nav {
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /*******Info-Group********/
+
+    .recherche-hebergements {
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        height: auto;
+        margin-bottom: 35px;
+    }
+    .headline {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .recherche {
+        width: auto;
+        margin: 0;
+    }
+    .rech-form {
+        display: flex;
+    }
+    .cont-input-rech {
+        width: 236px;
+    }
+    .input-rech {
+        width: auto;
+    }
+    .cont-button-rech {
+        height: 49px;
+        width: 49px;
+        margin-left: auto;
+    }
+    .button-rech {
+        border-radius: 15px;
+        border: 1px solid var(--Blue, #0065FC);
+        background: var(--Blue, #0065FC);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    .button-text {
+        display: none;
+    }
+    .button-icon {
+        display: inline;
+        color: white;
+    }
+    .fa-magnifying-glass {
+        color: white;
+    }
+    .filterbar{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        height: 161px;
+        width: 100%;
+    }
+    .filter-zone {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 100%;
+    }
+    .infobar {
+        margin: 0;
+    }
+    .F-box {
+        
+        width: auto;
+    }
+    .F-txt {
+        font-size: 14px;
+    }
+
+    /******** populaires***********/
+
+    .hebergements-and-populaires .populaires {
+        padding: 0;
+        padding-left: 20px;
+        padding-top: 30px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+    }
+
+    .populaires {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 15px;
+        
+    }
+    .populaires-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .populaires-cards a {
+        width: 100%;
+        margin-top: 0;
+    }
+    .populaires-cards .card {
+        margin: 0;
+    }
+
+    /******* Hebergement ***********/
+
+    .hebergements-and-populaires .hebergements {
+        padding: 30px 20px;
+        background-color: white;
+    }
+
+    .hebergements {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hebergements-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .hebergements-cards a {
+        width: 100%;
+    }
+    .h-card {
+        width: 100%;
+    }
+
+    /****** Activités *********/
+
+    .zone-activites {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .act-card-zone {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .act-card-zone a {
+        height: 200px;
+    }
+    .cards-activites {
+        height: 200px;
+    }
+    .lien-cards {
+        width: 100%;
+        height: 100%;
+    }
+    #act-img1 {
+        height: 141px;
+        width: 100%;
+    }
+    #act-img2 {
+        height: 141px;
+        width: 100%;
+    }
+    #act-img3 {
+        height: 141px;
+        width: 100%;
+    }
+    #act-img4 {
+        height: 141px;
+        width: 100%;
+    }
+
+    .lien-cards h3 {
+        font-size: 16px;
+    }
+
+    /**** Footer *****/
+
+    footer {
+        height: auto;
+        background-color: #F2F2F2;
+    }
+    .foot-cont {
+        display: flex;
+        flex-direction: column;
+        background-color: #F2F2F2;
+        gap: 50px;
+        padding: 30px;
+    }
+    .foot-box {
+        padding-bottom: 0;
+    }
 }
