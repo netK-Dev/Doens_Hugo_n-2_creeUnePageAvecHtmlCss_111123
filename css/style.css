@@ -546,6 +546,8 @@ footer {
 }
 
 
+
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -581,7 +583,84 @@ footer {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+/** Header ************/
+
+.logo-header {
+    padding: 30px 50px 30px 50px;
+    margin: 0;
 }
+
+
+/**** info groupe ***************/
+
+.filterbar {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    height: auto;
+    width: 668px;
+}
+
+.F-box {
+    width: auto;
+}
+
+.F-icone {
+    height: 22px;
+    width: 22px;
+}
+
+.F-txt {
+    font-size: 16px;
+}
+
+.F-eco {
+    width: 145.34px;
+}
+.F-fam {
+    width: 99.98px;
+}
+.F-rom {
+    width: 132.14px;
+}
+.F-np {
+    width: 123px;
+}
+
+
+/*** hebergements-and-populaires ************/
+
+.hebergements-and-populaires {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+/**** Activités **********/
+
+.cards-activites {
+    height: 270px;
+}
+
+#act-img1 {
+    height: 200px;
+}
+#act-img2 {
+    height: 200px;
+}
+#act-img3 {
+    height: 200px;
+}
+#act-img4 {
+    height: 200px;
+}
+
+}
+
+
+
+
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
