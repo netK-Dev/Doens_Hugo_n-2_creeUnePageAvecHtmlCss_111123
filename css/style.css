@@ -302,16 +302,16 @@ header {
     gap: 30px;
 }
 
-.hebergements-cards {        /*essayer avec grid pour le responsive*/
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.hebergements-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 30px;
     justify-content: center;
 }
 
 .h-card {
-    width: 250px;
+    width: auto;
     height: 192px;
     padding-bottom: 15px;
     background-color: #FFFFFF;
@@ -496,7 +496,6 @@ footer {
     flex: 1;
     flex-direction: column;
     height: 100%;
-    padding: 20px;
     gap: 15px;
     background-color: #F2F2F2;
 }
@@ -536,7 +535,7 @@ footer {
         margin-top: 50px;
     }
 
-    .populaires-cards {        /*essayer avec grid pour le responsive*/
+    .populaires-cards {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
